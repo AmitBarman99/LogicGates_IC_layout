@@ -1,0 +1,32 @@
+Circuit: *** SPICE deck for cell NOR{lay} from library NORgate
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Node NET@15 is floating.
+
+WARNING: Less than two connections to node B.  This node is used by VB.
+Direct Newton iteration for .op point succeeded.
+
+tf=1.87616e-007 FROM 1.23836e-008 TO 2e-007
+tr=1.44652e-007 FROM 5.53482e-008 TO 2e-007
+
+
+Date: Fri Jul 08 01:33:17 2022
+Total elapsed time: 0.255 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2339
+traniter = 2329
+tranpoints = 1074
+accept = 1074
+rejected = 0
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 376 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 701 bytes object code size  0.2/0.2/[0.1]
+

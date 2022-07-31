@@ -1,0 +1,24 @@
+*** SPICE deck for cell NORgate{sch} from library NORgate
+*** Created on Thu Jul 07, 2022 21:30:35
+*** Last revised on Thu Jul 07, 2022 23:11:56
+*** Written on Thu Jul 07, 2022 23:19:06 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: NORgate{sch}
+Mnmos@0 AnorB B gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@1 AnorB A gnd gnd NMOS L=0.36U W=1.8U
+Mpmos@0 vdd A net@2 vdd PMOS L=0.36U W=1.8U
+Mpmos@1 net@2 B AnorB vdd PMOS L=0.36U W=1.8U
+
+* Spice Code nodes in cell cell 'NORgate{sch}'
+vdd vdd 0 DC 5
+va A 0 DC pwl 10n 0 20n 5 50n 5 60n 0 90n 0 100n 5 130n 5 140n 0 170n 0 180n 5
+vb B 0 DC pwl 10n 0 20n 5 100n 5 110n 0
+.measure tran tf trig v(AnorB) val=4.5 fall=1 td=4ns trag v(AnorB) val=0.5 fall=1
+.measure tran tr trig v(AnorB) val=0.5 rise=1 td=4ns trag v(AnorB) val=4.5 rise=1
+.tran 200n
+.include D:\Electric\projects\C5_models.txt
+.END
