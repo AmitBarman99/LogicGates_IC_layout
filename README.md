@@ -28,32 +28,13 @@ I will update this repository as soon as possible.
   
 # NOR Gate
   
-</div>
 
-<br>
-  The NOR gate represents the complement of the OR operation. The NOR gate is also a universal gate,combination of the NOT-OR gate.<br>
-  The logical or Boolean expression for the NOR gate is --
-  
-<div align="center">
-   Y= (A + B)'
-<div>
-    
-### Symbol
-    
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Logic-gate-nor-us.png" alt="symbol" width="300px" height="150px"><br><br>
-<img src="https://concept-stories.s3.ap-south-1.amazonaws.com/test/Stories%20-%20Images_story_50534/image_2019-06-19%2017%3A41%3A30.765401%2B00%3A00">
-  
-  
  Design with CMOS transistor
   
-  <img src="https://eepower.com/uploads/articles/basic-cmos-logic-gates-fig3.jpg">
+  <img align="center" src="https://eepower.com/uploads/articles/basic-cmos-logic-gates-fig3.jpg">
+  </div>
   
-### Truth Table
-  
-  <img src="https://static.javatpoint.com/tutorial/digital-electronics/images/nor-gate-in-digital-electronics3.png" alt="truth_table"><br><br>
-  
-  
-If you want to know further about NOR gate [click here](https://en.wikipedia.org/wiki/NOR_gate)
+If you want to know about NOR gate [click here](https://en.wikipedia.org/wiki/NOR_gate)
   
 <div align="left">
   
@@ -73,7 +54,7 @@ Simulation of NOR gate (LTSpice XVII)
   
 <div align="left">
   
-# Important
+### Important
 
 
 During this Simulation you need to provide input signal or spice code
