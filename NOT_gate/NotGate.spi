@@ -1,0 +1,19 @@
+*** SPICE deck for cell NotGate{sch} from library NOT_gate
+*** Created on Fri Aug 12, 2022 21:29:54
+*** Last revised on Fri Aug 12, 2022 23:04:16
+*** Written on Fri Aug 12, 2022 23:12:51 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: NotGate{sch}
+Mnmos@0 A_ A gnd gnd NMOS L=0.36U W=1.8U
+Mpmos@0 vdd A A_ vdd PMOS L=0.36U W=1.8U
+
+* Spice Code nodes in cell cell 'NotGate{sch}'
+vdd vdd 0 DC 5
+vin A 0 pulse 5 0 0 300n 300n 2u 4u
+.trans 10u
+.include D:\Electric\projects\C5_models.txt
+.END
