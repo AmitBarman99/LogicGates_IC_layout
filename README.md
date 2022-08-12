@@ -1,7 +1,7 @@
 # LogicGates_IC_layout
 
 
-Repository of Schematic diagram , VLSI layout , simulation graph of Logic gates and IC 
+Repository of Schematic diagram , SSI layout , simulation graph of Logic gates and IC 
 
 > Basically I am using Electric VLSI design system to design Logic gates and IC's schematic diagram and layouts. <br>
 > I always simulate all the things in LTSpice XVII software to get or check the output is correct or not.
@@ -38,7 +38,7 @@ If you want to know about NOR gate [click here](https://en.wikipedia.org/wiki/NO
   
 <div align="left">
   
-## Here's the screenshot of my projects
+## Screenshots of Project
   
 </div>
   
@@ -69,8 +69,43 @@ vb B 0 DC pwl 10n 0 20n 5 100n 5 110n 0
 .tran 200n
 .include D:\Electric\projects\C5_models.txt
   ```
- 
-  
+
+<div align="center">
+
+# NOT Gate
+
+Design with CMOS transistor
+
+<img src="https://computationstructures.org/notes/images/cmos-inverter.png" alt="Not_gate">
+</div>
+
+If you want to know about NOR gate [click here](https://en.wikipedia.org/wiki/Inverter_(logic_gate))
+
+## Screenshots of Project
+
+<img src="https://github.com/AmitBarman99/LogicGates_IC_layout/blob/master/NOT_gate/Screenshot%20(20).png?raw=true" alt="layout">
+
+layout design of NOT gate (Electric vlsi)
+
+<br>
+
+<img src="https://github.com/AmitBarman99/LogicGates_IC_layout/blob/master/NOT_gate/Screenshot%20(18).png?raw=true" alt="simulation">
+
+simulation of NOT gate (LTSpice XVII)
+
+
+### Important
+
+spice code
+
+```bash
+vdd vdd 0 DC 5
+vin A 0 pulse 5 0 0 300n 300n 2u 4u
+.trans 10u
+.include D:\Electric\projects\C5_models.txt
+```
+<br>
+
 > If you will face any type of problems, feel free to ask <br>
 > And <br>
 > Be aware from layout shorts and DRC-ERC errors.😁
