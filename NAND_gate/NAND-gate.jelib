@@ -2,15 +2,92 @@
 HNAND-gate|9.07
 
 # Views:
+Vicon|ic
 Vlayout|lay
 Vschematic|sch
 
 # Technologies:
 Tmocmos|ScaleFORmocmos()D180.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I4
 
-# Cell NAND_gate;1{lay}
-CNAND_gate;1{lay}||mocmos|1663688176999|1663688176999|
+# Cell NAND_gate;1{ic}
+CNAND_gate;1{ic}||artwork|1663691929447|1663692244380|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||0|0|6|10|||SCHEM_function(D5G2;Y-14;)SNAND_gate|trace()V[-3/-5,-3/5,3/5,3/-5,-3/-5]
+Nschematic:Bus_Pin|pin@0||-5|1||||
+Nschematic:Wire_Pin|pin@1||-3|1||||
+Nschematic:Bus_Pin|pin@2||5|0||||
+Nschematic:Wire_Pin|pin@3||3|0||||
+Nschematic:Bus_Pin|pin@4||-5|-1||||
+Nschematic:Wire_Pin|pin@5||-3|-1||||
+Nschematic:Bus_Pin|pin@6||0|-7|||RR|
+Nschematic:Wire_Pin|pin@7||0|-5|||R|
+Nschematic:Bus_Pin|pin@8||0|7||||
+Nschematic:Wire_Pin|pin@9||0|5||||
+Aschematic:wire|net@0|||0|pin@1||-3|1|pin@0||-5|1
+Aschematic:wire|net@1|||1800|pin@3||3|0|pin@2||5|0
+Aschematic:wire|net@2|||0|pin@5||-3|-1|pin@4||-5|-1
+Aschematic:wire|net@3|||900|pin@7||0|-5|pin@6||0|-7
+Aschematic:wire|net@4|||2700|pin@9||0|5|pin@8||0|7
+EA||D5G2;|pin@0||I
+EA_nand_B||D5G2;X5;|pin@2||O
+EB||D5G2;|pin@4||I
+Egnd||D5G2;Y1;|pin@6||G
+Evdd||D5G2;Y1;|pin@8||P
+X
+
+# Cell NAND_gate;1{lay}
+CNAND_gate;1{lay}||mocmos|1663688176999|1663691763045||DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1663691783112
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-P-Active-Con|contact@0||2|15|5||RRR|
+NMetal-1-P-Active-Con|contact@1||-10|15|5||RRR|
+NMetal-1-P-Active-Con|contact@2||14|15|5||RRR|
+NMetal-1-N-Active-Con|contact@3||-10|-29|5||RRR|
+NMetal-1-N-Active-Con|contact@4||10|-29|5||RRR|
+NMetal-1-Polysilicon-1-Con|contact@5||-29|-12||||
+NMetal-1-Polysilicon-2-Con|contact@6||-29|0||||
+NMetal-1-Polysilicon-1-Con|contact@7||25|-7||||
+NN-Transistor|nmos@0||-4|-29|7||RRR||SIM_spice_model(D5G1;)SNMOS
+NN-Transistor|nmos@1||4|-29|7||RRR||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@0||8|-15||||
+NPolysilicon-1-Pin|pin@1||4|-15||||
+NPolysilicon-1-Pin|pin@2||4|-22||||
+NMetal-1-Pin|pin@3||2|0||||
+NMetal-1-Pin|pin@5||-10|0||||
+NPolysilicon-1-Pin|pin@7||-4|-12||||
+NPolysilicon-1-Pin|pin@8||8|-7||||
+Ngeneric:Invisible-Pin|pin@9||53|-22|||||SIM_spice_card(D5G2;)S[vdd vdd 0 DC 5,va A 0 pulse 5 0 0 100n 100n 1u 3u,vb B 0 pulse 5 0 0 100n 100n 1u 2u,.trans 10u,".include D:\\Electric\\projects\\C5_models.txt"]
+NP-Transistor|pmos@0||-4|15|7||RRR||SIM_spice_model(D5G1;)SPMOS
+NP-Transistor|pmos@1||8|15|7||RRR||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@1||0|-45|25|||
+NMetal-1-N-Well-Con|well@1||2|32|25|1||
+AP-Active|net@0|||S1800|pmos@0|diff-top|-0.25|15|contact@0||2|15
+AP-Active|net@1|||S0|pmos@0|diff-bottom|-7.75|15|contact@1||-10|15
+AP-Active|net@2|||S0|pmos@1|diff-bottom|4.25|15|contact@0||2|15
+AP-Active|net@3|||S1800|pmos@1|diff-top|11.75|15|contact@2||14|15
+AN-Active|net@4|||S1800|nmos@0|diff-top|-0.25|-28|nmos@1|diff-bottom|0.25|-28
+AN-Active|net@5|||S0|nmos@0|diff-bottom|-7.75|-29|contact@3||-10|-29
+AN-Active|net@6|||S1800|nmos@1|diff-top|7.75|-29|contact@4||10|-29
+APolysilicon-1|net@9|||S0|pin@0||8|-15|pin@1||4|-15
+APolysilicon-1|net@10|||S900|pin@1||4|-15|pin@2||4|-22
+APolysilicon-1|net@11|||S0|nmos@1|poly-left|4|-22|pin@2||4|-22
+AMetal-1|net@14||1|S900|contact@0||2|15|pin@3||2|0
+AMetal-1|net@17||1|S2700|contact@3||-10|-29|pin@5||-10|0
+AMetal-1|net@18||1|S1800|pin@5||-10|0|pin@3||2|0
+APolysilicon-1|net@24|||S900|pmos@0|poly-right|-4|8|pin@7||-4|-12
+APolysilicon-1|net@25|||S900|pin@7||-4|-12|nmos@0|poly-left|-4|-22
+APolysilicon-1|net@26|||S0|pin@7||-4|-12|contact@5||-29|-12
+AMetal-1|net@27||1|S0|pin@5||-10|0|contact@6||-29|0
+APolysilicon-1|net@28|||S900|pmos@1|poly-right|8|8|pin@8||8|-7
+APolysilicon-1|net@29|||S900|pin@8||8|-7|pin@0||8|-15
+APolysilicon-1|net@30|||S1800|pin@8||8|-7|contact@7||25|-7
+AMetal-1|net@31||1|S900|contact@4||10|-29|substr@1||10|-45
+AMetal-1|net@32||1|S2700|contact@2||14|15|well@1||14|31
+AMetal-1|net@33||1|S2700|contact@1||-10|15|well@1||-10|31
+EA||D5G3;X-5;|contact@5||I
+EA_nand_B||D5G2;X-8;|contact@6||O
+EB||D5G3;X5;|contact@7||I
+Egnd||D5G2;|substr@1||G
+Evdd||D5G2;|well@1||P
 X
 
 # Cell NAND_gate;1{sch}

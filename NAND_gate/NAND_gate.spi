@@ -1,0 +1,20 @@
+*** SPICE deck for cell NAND_gate{lay} from library NAND-gate
+*** Created on Tue Sep 20, 2022 21:06:16
+*** Last revised on Tue Sep 20, 2022 22:06:03
+*** Written on Tue Sep 20, 2022 22:06:30 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: NAND_gate{lay}
+Mnmos@0 A_nand_B A net@4 gnd NMOS L=0.36U W=1.8U AS=0.972P AD=1.89P PS=2.88U PD=4.5U
+Mnmos@1 net@4 B gnd gnd NMOS L=0.36U W=1.8U AS=7.29P AD=0.972P PS=18.9U PD=2.88U
+Mpmos@0 vdd A A_nand_B vdd PMOS L=0.36U W=1.8U AS=1.89P AD=5.346P PS=4.5U PD=12.78U
+Mpmos@1 A_nand_B B vdd vdd PMOS L=0.36U W=1.8U AS=5.346P AD=1.89P PS=12.78U PD=4.5U
+
+* Spice Code nodes in cell cell 'NAND_gate{lay}'
+vdd vdd 0 DC 5
+va A 0 pulse 5 0 0 100n 100n 1u 3u
+vb B 0 pulse 5 0 0 100n 100n 1u 2u
+.trans 10u
+.include D:\Electric\projects\C5_models.txt
+.END
