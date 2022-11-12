@@ -29,7 +29,7 @@ I will update this repository as soon as possible.
 # NOR Gate
   
 
- Design with CMOS transistor
+ Design with CMOS
   
   <img align="center" src="https://eepower.com/uploads/articles/basic-cmos-logic-gates-fig3.jpg">
   </div>
@@ -61,7 +61,7 @@ During this Simulation you need to provide input signal or spice code
 this code is here,
   
   ```bash
-  vdd vdd 0 DC 5
+vdd vdd 0 DC 5
 va A 0 DC pwl 10n 0 20n 5 50n 5 60n 0 90n 0 100n 5 130n 5 140n 0 170n 0 180n 5
 vb B 0 DC pwl 10n 0 20n 5 100n 5 110n 0
 .measure tran tf trig v(AnorB) val=4.5 fall=1 td=4ns trag v(AnorB) val=0.5 fall=1
@@ -74,7 +74,7 @@ vb B 0 DC pwl 10n 0 20n 5 100n 5 110n 0
 
 # NOT Gate
 
-Design with CMOS transistor
+Design with CMOS
 
 <img src="https://computationstructures.org/notes/images/cmos-inverter.png" alt="Not_gate">
 </div>
@@ -105,6 +105,17 @@ vin A 0 pulse 5 0 0 300n 300n 2u 4u
 .include D:\Electric\projects\C5_models.txt
 ```
 <br>
+
+<div align="center">
+
+# NAND Gate
+
+Design with CMOS
+
+<img src="" alt="Nand_gate">
+</div>
+
+
 
 > If you will face any type of problems, feel free to ask <br>
 > And <br>
