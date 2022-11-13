@@ -112,8 +112,22 @@ vin A 0 pulse 5 0 0 300n 300n 2u 4u
 
 Design with CMOS
 
-<img src="" alt="Nand_gate">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CMOS_NAND.svg/800px-CMOS_NAND.svg.png" alt="Nand_gate">
 </div>
+
+If you want to know about NAND gate [click here](https://en.wikipedia.org/wiki/NAND_gate)
+
+## Screenshots of Project
+
+<img src="./NAND_gate/nandGate-screenshot.png" alt="layout">
+
+layout design of NAND gate (Electric vlsi)
+
+<br>
+
+<img src="./NAND_gate/nand-gate-graph.jpg" alt="simulation">
+
+simulation of NAND gate (LTSpice XVII)
 
 
 
