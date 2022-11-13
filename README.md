@@ -13,7 +13,7 @@ Repository of Schematic diagram , SSI layout , simulation graph of Logic gates a
   Electric VLSI Design System
   <br><br>
  <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" target="_blank">
-   <img src="https://ez.analog.com/cfs-file/__key/communityserver-components-groupavatars/00-00-00-06-51/LTspice_2D00_Icon.png_2D00_320x240.png.png" alt="electric VLSI" width="40" height="40"/>
+   <img src="https://gitlab.com/uploads/-/system/project/avatar/9699744/ltspice.png?width=64" alt="LTspice" width="40" height="40"/>
 </a>
   LTSpice XVII
   <br><br>
@@ -112,7 +112,7 @@ vin A 0 pulse 5 0 0 300n 300n 2u 4u
 
 Design with CMOS
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CMOS_NAND.svg/800px-CMOS_NAND.svg.png" alt="Nand_gate">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CMOS_NAND.svg/800px-CMOS_NAND.svg.png" width="400" alt="Nand_gate">
 </div>
 
 If you want to know about NAND gate [click here](https://en.wikipedia.org/wiki/NAND_gate)
@@ -129,6 +129,18 @@ layout design of NAND gate (Electric vlsi)
 
 simulation of NAND gate (LTSpice XVII)
 
+### Important
+
+**spice code**
+
+```bash
+vdd vdd 0 DC 5
+va A 0 pulse 5 0 0 100n 100n 1u 3u
+vb B 0 pulse 5 0 0 100n 100n 1u 2u
+.trans 10u
+.include D:\Electric\projects\C5_models.txt
+```
+<br>
 
 
 > If you will face any type of problems, feel free to ask <br>
