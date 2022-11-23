@@ -1,0 +1,24 @@
+*** SPICE deck for cell AND_sch{sch} from library AND_gate
+*** Created on Wed Nov 23, 2022 17:36:36
+*** Last revised on Wed Nov 23, 2022 17:56:52
+*** Written on Wed Nov 23, 2022 18:19:44 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: AND_sch{sch}
+Mnmos@0 net@13 A net@0 gnd NMOS L=0.36U W=1.8U
+Mnmos@1 gnd B net@0 gnd NMOS L=0.36U W=1.8U
+Mnmos@2 A_B net@13 gnd gnd NMOS L=0.36U W=1.8U
+Mpmos@0 vdd A net@13 vdd PMOS L=0.36U W=1.8U
+Mpmos@1 net@13 B vdd vdd PMOS L=0.36U W=1.8U
+Mpmos@2 vdd net@13 A_B vdd PMOS L=0.36U W=1.8U
+
+* Spice Code nodes in cell cell 'AND_sch{sch}'
+vdd vdd 0 DC 5
+va A 0 pulse 5 0 0 10n 10n 1u 3u
+vb B 0 pulse 5 0 0 10n 10n 1u 2u
+.trans 50u
+.include D:\Electric\projects\C5_models.txt
+.END
