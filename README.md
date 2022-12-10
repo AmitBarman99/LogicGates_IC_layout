@@ -142,6 +142,30 @@ vb B 0 pulse 5 0 0 100n 100n 1u 2u
 ```
 <br>
 
+<div align="center">
+
+# AND Gate
+
+Design with CMOS
+
+<img src="https://www.allaboutcircuits.com/uploads/articles/CMOS-AND-gate-schematic-diagram.jpg" width="400" alt="Nand_gate">
+</div>
+
+If you want to know about NAND gate [click here](https://en.wikipedia.org/wiki/AND_gate)
+
+## Screenshots of Project
+
+<img src="./AND_gate/AND_gate.png" alt="layout">
+
+layout design of NAND gate (Electric vlsi)
+
+<br>
+
+<img src="./AND_gate/AND_gate_layout_graph-001.png">
+
+simulation of NAND gate (LTSpice XVII)
+
+
 
 > If you will face any type of problems, feel free to ask <br>
 > And <br>
