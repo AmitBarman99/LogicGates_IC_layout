@@ -151,20 +151,32 @@ Design with CMOS
 <img src="https://www.allaboutcircuits.com/uploads/articles/CMOS-AND-gate-schematic-diagram.jpg" width="400" alt="Nand_gate">
 </div>
 
-If you want to know about NAND gate [click here](https://en.wikipedia.org/wiki/AND_gate)
+If you want to know about AND gate [click here](https://en.wikipedia.org/wiki/AND_gate)
 
 ## Screenshots of Project
 
 <img src="./AND_gate/AND_gate.png" alt="layout">
 
-layout design of NAND gate (Electric vlsi)
+layout design of AND gate (Electric vlsi)
 
 <br>
 
 <img src="./AND_gate/AND_gate_layout_graph-001.png">
 
-simulation of NAND gate (LTSpice XVII)
+simulation of AND gate (LTSpice XVII)
 
+### Important
+
+**spice code**
+
+```bash
+vdd vdd 0 DC 5
+va A 0 pulse 5 0 0 40n 40n 1u 3u
+vb B 0 pulse 5 0 0 40n 40n 1u 2u
+.trans 50u
+.include D:\Electric\projects\C5_models.txt
+```
+<br>
 
 
 > If you will face any type of problems, feel free to ask <br>
